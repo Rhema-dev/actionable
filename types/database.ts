@@ -58,7 +58,10 @@ export type DMTemplateType =
   | "Mockup Offer"
   | "Value-First"
   | "Follow-Up"
-  | "Meeting Request";
+  | "Meeting Request"
+  | "SaaS Pitch"
+  | "Tweet Library"
+  | "LinkedIn Post";
 
 export interface Profile {
   id: string;

@@ -12,13 +12,17 @@ import { cn } from "@/lib/utils";
 import type { DMTemplate, DMTemplateType } from "@/types/database";
 import { Plus, Copy, Star, Trash2, Edit2, MessageCircle } from "lucide-react";
 
-const TYPES: DMTemplateType[] = ["Initial Outreach", "Mockup Offer", "Value-First", "Follow-Up", "Meeting Request"];
+const TYPES: DMTemplateType[] = [
+  "Initial Outreach", "Mockup Offer", "Value-First", "Follow-Up", "Meeting Request",
+  "SaaS Pitch", "Tweet Library", "LinkedIn Post",
+];
 const TYPE_COLORS: Record<string, any> = {
   "Mockup Offer": "success", "Value-First": "indigo", "Initial Outreach": "blue",
   "Follow-Up": "amber", "Meeting Request": "violet",
+  "SaaS Pitch": "success", "Tweet Library": "blue", "LinkedIn Post": "indigo",
 };
 
-const EMPTY_FORM = { name: "", template_type: "Initial Outreach" as DMTemplateType, content: "", use_case: "" };
+const EMPTY_FORM = { name: "", template_type: "SaaS Pitch" as DMTemplateType, content: "", use_case: "" };
 
 interface TemplatesClientProps { initialTemplates: DMTemplate[]; userId: string; }
 
