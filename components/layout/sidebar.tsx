@@ -6,7 +6,7 @@ import { createClient } from "@/lib/supabase/client";
 import {
   LayoutDashboard, Users, Briefcase, Calendar, CheckSquare,
   DollarSign, Monitor, Target, MessageCircle, Settings,
-  ChevronLeft, ChevronRight, Zap, LogOut,
+  ChevronLeft, ChevronRight, Zap, LogOut, Crosshair,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -20,6 +20,7 @@ const navItems = [
   { href: "/pc-fund", icon: Monitor, label: "PC Fund" },
   { href: "/goals", icon: Target, label: "Goals" },
   { href: "/templates", icon: MessageCircle, label: "Templates" },
+  { href: "/lead-hunting", icon: Crosshair, label: "Lead Hunting" },
   { href: "/settings", icon: Settings, label: "Settings" },
 ];
 
