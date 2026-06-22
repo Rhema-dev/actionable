@@ -30,7 +30,7 @@ export type ProjectType =
   | "Demo"
   | "Custom";
 
-export type ContentPlatform = "X" | "YouTube" | "LinkedIn";
+export type ContentPlatform = "X" | "YouTube" | "LinkedIn" | "Instagram" | "TikTok";
 export type ContentStatus = "Draft" | "Scheduled" | "Published" | "Skipped";
 export type ContentType =
   | "Showcase"
@@ -61,7 +61,9 @@ export type DMTemplateType =
   | "Meeting Request"
   | "SaaS Pitch"
   | "Tweet Library"
-  | "LinkedIn Post";
+  | "LinkedIn Post"
+  | "Agency Outreach"
+  | "Creator Outreach";
 
 export interface Profile {
   id: string;
